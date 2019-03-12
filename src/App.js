@@ -27,20 +27,20 @@ class App extends Component {
     this.handleLogout = this.handleLogout.bind(this);
   }
 
-  async componentDidMount() {
-    try {
-      if (await Auth.currentSession()) {
-        this.userHasAuthenticated(true);
-      }
-    }
-    catch (e) {
-      if (e !== 'No current user') {
-        alert(e);
-      }
-    }
+  // async componentDidMount() {
+  //   try {
+  //     if (await Auth.currentSession()) {
+  //       this.userHasAuthenticated(true);
+  //     }
+  //   }
+  //   catch (e) {
+  //     if (e !== 'No current user') {
+  //       alert(e);
+  //     }
+  //   }
 
-    this.setState({ isAuthenticating: false });
-  }
+  //   this.setState({ isAuthenticating: false });
+  // }
 
   userHasAuthenticated = authenticated => {
     this.setState({ isAuthenticated: authenticated });

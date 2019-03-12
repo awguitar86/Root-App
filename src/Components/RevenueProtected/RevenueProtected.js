@@ -27,51 +27,51 @@ class RevenueProtected extends Component {
           this.handleDay = this.handleDay.bind(this);
       }
 
-    componentDidMount(){
-        let merchId = this.props.merchantInfo.id;
-        let platId = this.props.platformInfo.id;
-        let entity = this.props.entityInfo.entity;
-        if(entity.includes('ROUTE_PLATFORM')){
-            findPlatformGraph(platId)
-            .then( res => {
-                console.log(res.data);
-                this.setState({
-                    lineGraphLabels: res.data.labels,
-                    lineGraphData: res.data.data,
-                    stats: this.props.platformInfo.stats
-                });
-            })
-        }
-        else {
-            findAllOrders(merchId)
-                .then( res => {
-                    console.log(res.data[0]);
-                    if(res.data[0]){
-                        findGraphData(merchId)
-                        .then( res => {
-                            console.log(res.data);
-                            this.setState({
-                                lineGraphLabels: res.data.labels,
-                                lineGraphData: res.data.data,
-                                stats: this.props.merchantInfo.stats
-                            });
-                        })
-                    }
-                    else {
-                        this.setState({
-                            lineGraphLabels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24],
-                            lineGraphData: [0, 50, 98, 130, 169, 205, 380, 450, 525, 480, 400, 376, 300, 324, 385, 438, 491, 540, 600, 650, 520, 468, 430, 370],
-                            stats: {
-                                revenue_insured: '5,689',
-                                total_transactions: '3,568',
-                                number_of_insured: '1,457',
-                                uptake_percentage: 68
-                            }
-                        });
-                    }
-                })
-        }
-    }
+    // componentDidMount(){
+    //     let merchId = this.props.merchantInfo.id;
+    //     let platId = this.props.platformInfo.id;
+    //     let entity = this.props.entityInfo.entity;
+    //     if(entity.includes('ROUTE_PLATFORM')){
+    //         findPlatformGraph(platId)
+    //         .then( res => {
+    //             console.log(res.data);
+    //             this.setState({
+    //                 lineGraphLabels: res.data.labels,
+    //                 lineGraphData: res.data.data,
+    //                 stats: this.props.platformInfo.stats
+    //             });
+    //         })
+    //     }
+    //     else {
+    //         findAllOrders(merchId)
+    //             .then( res => {
+    //                 console.log(res.data[0]);
+    //                 if(res.data[0]){
+    //                     findGraphData(merchId)
+    //                     .then( res => {
+    //                         console.log(res.data);
+    //                         this.setState({
+    //                             lineGraphLabels: res.data.labels,
+    //                             lineGraphData: res.data.data,
+    //                             stats: this.props.merchantInfo.stats
+    //                         });
+    //                     })
+    //                 }
+    //                 else {
+    //                     this.setState({
+    //                         lineGraphLabels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24],
+    //                         lineGraphData: [0, 50, 98, 130, 169, 205, 380, 450, 525, 480, 400, 376, 300, 324, 385, 438, 491, 540, 600, 650, 520, 468, 430, 370],
+    //                         stats: {
+    //                             revenue_insured: '5,689',
+    //                             total_transactions: '3,568',
+    //                             number_of_insured: '1,457',
+    //                             uptake_percentage: 68
+    //                         }
+    //                     });
+    //                 }
+    //             })
+    //     }
+    // }
 
     handleDay(){
         let merchId = this.props.merchantInfo.id;

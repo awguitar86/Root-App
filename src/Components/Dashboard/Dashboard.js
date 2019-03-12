@@ -54,61 +54,61 @@ class Dashboard extends Component {
         // this.validateForm = this.validateForm.bind(this);
     }
 
-    componentDidMount() {
-        hello()
-            .then( res => {
-                console.log(res.data);
-            })
-        let entity = this.props.entityInfo.entity;
-        let platId = this.props.platformInfo.id;
-        let merchId = this.props.merchantInfo.id;
-        let userId = this.props.userInfo.id;
-        switch(entity){
-            case "ROUTE_PLATFORM":
-                this.setState({ showModal: false });
-                findPlatform(platId)
-                .then(res => {
-                    let newPlatformInfo = res.data;
-                    console.log(res.data);
-                    this.props.updatePlatform(newPlatformInfo);
-                })
-                findUser(userId)
-                .then(res => {
-                    let newUserInfo = res.data;
-                    console.log(res.data);
-                    this.props.updateUser(newUserInfo);
-                })
-                break;
-            case "ROUTE_MERCHANT":
-                findMerchantSignature(merchId)
-                    .then( res => {
-                        console.log(res.data);
-                        if(res.data['onboarded']){
-                            this.setState({showModal: false});
-                        }
-                        else {
-                            this.setState({showModal: true});
-                        };
-                    })
-                    .catch( err => {throw err} );
-                console.log(this.state.onboarding);
-                findMerchant(merchId)
-                .then(res => {
-                    let newMerchantInfo = res.data;
-                    console.log(res.data);
-                    this.props.updateMerchant(newMerchantInfo);
-                })
-                findUser(userId)
-                .then(res => {
-                    let newUserInfo = res.data;
-                    console.log(res.data);
-                    this.props.updateUser(newUserInfo);
-                })
-                break;
-            default:
-                alert("You are not part of a platform or merchant. You have no role.");
-        }
-    }
+    // componentDidMount() {
+    //     hello()
+    //         .then( res => {
+    //             console.log(res.data);
+    //         })
+    //     let entity = this.props.entityInfo.entity;
+    //     let platId = this.props.platformInfo.id;
+    //     let merchId = this.props.merchantInfo.id;
+    //     let userId = this.props.userInfo.id;
+    //     switch(entity){
+    //         case "ROUTE_PLATFORM":
+    //             this.setState({ showModal: false });
+    //             findPlatform(platId)
+    //             .then(res => {
+    //                 let newPlatformInfo = res.data;
+    //                 console.log(res.data);
+    //                 this.props.updatePlatform(newPlatformInfo);
+    //             })
+    //             findUser(userId)
+    //             .then(res => {
+    //                 let newUserInfo = res.data;
+    //                 console.log(res.data);
+    //                 this.props.updateUser(newUserInfo);
+    //             })
+    //             break;
+    //         case "ROUTE_MERCHANT":
+    //             findMerchantSignature(merchId)
+    //                 .then( res => {
+    //                     console.log(res.data);
+    //                     if(res.data['onboarded']){
+    //                         this.setState({showModal: false});
+    //                     }
+    //                     else {
+    //                         this.setState({showModal: true});
+    //                     };
+    //                 })
+    //                 .catch( err => {throw err} );
+    //             console.log(this.state.onboarding);
+    //             findMerchant(merchId)
+    //             .then(res => {
+    //                 let newMerchantInfo = res.data;
+    //                 console.log(res.data);
+    //                 this.props.updateMerchant(newMerchantInfo);
+    //             })
+    //             findUser(userId)
+    //             .then(res => {
+    //                 let newUserInfo = res.data;
+    //                 console.log(res.data);
+    //                 this.props.updateUser(newUserInfo);
+    //             })
+    //             break;
+    //         default:
+    //             alert("You are not part of a platform or merchant. You have no role.");
+    //     }
+    // }
     openModal() {
         this.setState({ showModal: true });
       }
