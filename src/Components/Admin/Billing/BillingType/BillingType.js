@@ -56,18 +56,18 @@ class BillingType extends Component {
             public_token_value,
             user_id
         };
-        if(entity.includes('ROUTE_PLATFORM')){
-            createPlatformBilling(platId, body)
-                .then( res => res.data )
-                .catch( err => {throw err});
-                console.log(platId, body);
-        }
-        else {
-            createMerchantBilling(merchId, body)
-                .then( res => res.data )
-                .catch( err => {throw err});
-                console.log(merchId, body);
-        }
+        // if(entity.includes('ROUTE_PLATFORM')){
+        //     createPlatformBilling(platId, body)
+        //         .then( res => res.data )
+        //         .catch( err => {throw err});
+        //         console.log(platId, body);
+        // }
+        // else {
+        //     createMerchantBilling(merchId, body)
+        //         .then( res => res.data )
+        //         .catch( err => {throw err});
+        //         console.log(merchId, body);
+        // }
         this.setState({showModal: true});
         this.timer = setInterval( this.handleRedirect.bind(this), 1700 );
     }

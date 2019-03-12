@@ -57,25 +57,25 @@ class Transactions extends Component {
         };
     }
 
-    componentDidMount() {
-        let id = this.props.merchantInfo.id;
-        let entity = this.props.entityInfo.entity;
-        if(entity.includes('ROUTE_MERCHANT')){
-            findAllOrders(id)
-            .then( res => {
-                if (res.status !== 200){
-                    console.log(res);
-                }
-                else{
-                    this.setState({ orders: res.data });
-                    console.log(res.data);
-                }
-            })
-        }
-        else {
-            this.setState({orders: []});
-        }
-    }
+    // componentDidMount() {
+    //     let id = this.props.merchantInfo.id;
+    //     let entity = this.props.entityInfo.entity;
+    //     if(entity.includes('ROUTE_MERCHANT')){
+    //         findAllOrders(id)
+    //         .then( res => {
+    //             if (res.status !== 200){
+    //                 console.log(res);
+    //             }
+    //             else{
+    //                 this.setState({ orders: res.data });
+    //                 console.log(res.data);
+    //             }
+    //         })
+    //     }
+    //     else {
+    //         this.setState({orders: []});
+    //     }
+    // }
 
 
     render() {

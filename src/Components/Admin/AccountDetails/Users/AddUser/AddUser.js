@@ -25,15 +25,15 @@ class AddUser extends Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    componentDidMount(){
-        let entity = this.props.entityInfo.entity;
-        if(entity.includes('ROUTE_PLATFORM')){
-            this.setState({role: 'ROUTE_PLATFORM'});
-        }
-        else {
-            this.setState({role: 'ROUTE_MERCHANT'});
-        }
-    }
+    // componentDidMount(){
+    //     let entity = this.props.entityInfo.entity;
+    //     if(entity.includes('ROUTE_PLATFORM')){
+    //         this.setState({role: 'ROUTE_PLATFORM'});
+    //     }
+    //     else {
+    //         this.setState({role: 'ROUTE_MERCHANT'});
+    //     }
+    // }
 
     handleInputChange(e){
         const key = e.target.name;
@@ -122,8 +122,9 @@ class AddUser extends Component {
                         </div>
                         <div>
                             <h4>User Role</h4>
-                            <input className={entity.includes('ROUTE_PLATFORM') ? 'platform-role' : 'platform-role-false'} value="ROUTE_PLATFORM"  disabled type="text"  name="role" />
-                            <input className={entity.includes('ROUTE_MERCHANT') ? 'merchant-role' : 'merchant-role-false'} value='ROUTE_MERCHANT' disabled type="text"  name="role" />
+                            {/* <input className={entity.includes('ROUTE_PLATFORM') ? 'platform-role' : 'platform-role-false'} value="ROUTE_PLATFORM"  disabled type="text"  name="role" />
+                            <input className={entity.includes('ROUTE_MERCHANT') ? 'merchant-role' : 'merchant-role-false'} value='ROUTE_MERCHANT' disabled type="text"  name="role" /> */}
+                            <input className='merchant-role' value='ROUTE_MERCHANT' disabled type="text"  name="role" />
                         </div>
                     </div>
                     <div className='add-user-save-button'>

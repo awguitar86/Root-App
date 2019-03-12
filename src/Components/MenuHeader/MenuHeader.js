@@ -15,7 +15,8 @@ export default class MenuHeader extends Component {
         return (
             <div className='menu-body'>
                 <div className="menu-wrap">
-                    <div className='menu-logo'><Link to='/dashboard'><img src={RouteLogo} alt='Route logo'/></Link></div>
+                    {/* <div className='menu-logo'><Link to='/dashboard'><img src={RouteLogo} alt='Route logo'/></Link></div> */}
+                    <div></div>
                     <div className='menu-nav'>
                         <Link to='/dashboard'>
                             <div className='menu-item'>
