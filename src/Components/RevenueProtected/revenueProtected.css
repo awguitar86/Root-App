@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700");
+.revenue-container {
+  width: 95vw;
+  background: #262C46;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding-bottom: 30px; }
+
+.revenue-header {
+  width: 95vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #303757;
+  border-radius: 5px 5px 0px 0px;
+  margin-bottom: 20px; }
+
+.revenue-header-text {
+  width: 30vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+  .revenue-header-text h3 {
+    color: #9799A8;
+    font-weight: normal;
+    margin-left: 20px; }
+  .revenue-header-text h1 {
+    font-size: 36px;
+    color: #45DCE5;
+    margin: 0;
+    margin-left: 30px;
+    font-weight: 400; }
+
+.protected-transaction-info {
+  width: 30vw;
+  color: #9799A8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 2px; }
+  .protected-transaction-info hr {
+    height: 30px;
+    border: solid 1px #445072;
+    margin: 0; }
+
+.total-transactions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px; }
+  .total-transactions p {
+    margin: 0;
+    margin-bottom: 0px;
+    font-size: 10pt; }
+  .total-transactions h3 {
+    margin: 0;
+    font-weight: normal; }
+
+.protected {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px; }
+  .protected p {
+    margin: 0;
+    margin-bottom: 0px;
+    font-size: 10pt; }
+  .protected h3 {
+    margin: 0;
+    font-weight: normal; }
+
+.revenue-header-right {
+  width: 30vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+
+.revenue-body {
+  width: 95vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around; }
+
+.line-graph-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 30px;
+  margin-top: 20px; }
+
+.revenue-line-graph {
+  width: 65vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px; }
+
+.line-graph {
+  width: 65vw;
+  height: 260px; }
+
+.line-graph-dates {
+  width: 65vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 15px; }
+
+.date-buttons {
+  width: 340px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 29px; }
+  .date-buttons button {
+    width: 50px;
+    background: #9799A8;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    outline: none; }
+    .date-buttons button:hover {
+      background: #445072;
+      transition: ease-in-out 0.3s; }
+    .date-buttons button:focus {
+      background: #45DCE5; }
+
+.revenue-charts {
+  display: flex;
+  margin-right: 50px;
+  margin-top: 60px; }
+
+.protected-transactions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+
+.protected-circle-chart {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; }
+
+.protected-circle-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute; }
+  .protected-circle-text h3 {
+    margin: 0;
+    font-weight: normal;
+    color: white;
+    margin-bottom: 5px; }
+  .protected-circle-text p {
+    margin: 0;
+    font-size: 11pt;
+    color: #9799A8;
+    text-align: center; }
+
+.pro-trans-doughnut {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute; }
+
+.claim-approval {
+  display: flex;
+  margin: 0px 0px 4px 0px; }
+
+.claim-circle-chart {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative; }
+
+.claim-circle-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute; }
+  .claim-circle-text h3 {
+    margin: 0;
+    font-weight: normal;
+    color: white;
+    margin-bottom: 5px; }
+  .claim-circle-text p {
+    margin: 0;
+    font-size: 9pt;
+    color: #9799A8;
+    text-align: center; }
+
+.claim-approval-doughnut {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute; }
+
+.claim-approval-info {
+  background: #1A1E37;
+  color: #9799A8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin-left: 50px;
+  padding: 8px 0px 8px 0px; }
+  .claim-approval-info hr {
+    width: 100px;
+    border: solid 1px #445072; }
+
+.cai {
+  width: 200px;
+  color: #9799A8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .cai p {
+    margin: 0;
+    margin-bottom: 2px;
+    font-size: 9pt; }
+  .cai h3 {
+    margin: 0;
+    font-weight: normal; }
+
+.revenue-date-range {
+  width: 380px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 30px; }
+  .revenue-date-range p {
+    margin: 0;
+    color: #9799A8;
+    font-size: 10pt; }
+  .revenue-date-range input {
+    border: solid 1px #9799A8;
+    background: none;
+    width: 150px;
+    height: 25px;
+    border-radius: 3px;
+    outline: none;
+    color: #9799A8;
+    font-size: 10pt; }

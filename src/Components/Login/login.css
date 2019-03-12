@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700");
+.login {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; }
+
+.login-wrapper {
+  color: #9799A8;
+  padding: 50px 100px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px; }
+  .login-wrapper h1 {
+    color: #313942;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400; }
+  .login-wrapper form {
+    display: flex;
+    flex-direction: column; }
+    .login-wrapper form input {
+      width: 400px;
+      height: 25px;
+      margin-bottom: 15px;
+      border: solid 1px #313942;
+      border-radius: 4px;
+      padding: 5px;
+      outline: none;
+      font-size: 12pt;
+      font-family: "Titillium Web", sans-serif; }
+    .login-wrapper form button {
+      width: 412px;
+      height: 35px;
+      border-radius: 4px;
+      margin-top: 20px;
+      background: #5EC7DB;
+      border: none;
+      color: white;
+      font-size: 12pt;
+      font-family: "Titillium Web", sans-serif;
+      font-weight: 600;
+      cursor: pointer; }
+      .login-wrapper form button:disabled {
+        width: 412px;
+        height: 35px;
+        border-radius: 4px;
+        margin-top: 20px;
+        background: lightgray;
+        border: none;
+        color: white;
+        font-size: 12pt;
+        font-family: "Titillium Web", sans-serif;
+        font-weight: 600; }
+
+.other-actions {
+  width: 412px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .other-actions a {
+    color: #313942; }
+
+.login-new-pass-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; }
+  .login-new-pass-form input {
+    width: 400px;
+    height: 25px;
+    margin-bottom: 15px;
+    border: solid 1px #313942;
+    border-radius: 4px;
+    padding: 5px;
+    outline: none;
+    font-size: 12pt;
+    font-family: "Titillium Web", sans-serif; }
+  .login-new-pass-form button {
+    width: 412px;
+    height: 35px;
+    border-radius: 4px;
+    margin-top: 20px;
+    background: #5EC7DB;
+    border: none;
+    color: white;
+    font-size: 12pt;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600; }
+  .login-new-pass-form div {
+    width: 412px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .login-new-pass-form div p {
+      margin: 0; }
+
+.error-message {
+  color: red;
+  width: 100%;
+  text-align: center;
+  margin: 1em; }
+
+.login-check-email {
+  color: #5EC7DB;
+  font-weight: 600; }
+
+.login-check-email-false {
+  display: none; }

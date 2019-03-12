@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700");
+.dashboard {
+  height: 100vh;
+  overflow: scroll; }
+
+.route-modal {
+  width: 300px;
+  height: 300px;
+  border: none;
+  outline: none;
+  font-family: "Titillium Web", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.route-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 110; }
+
+.onboarding-modal-wrap {
+  width: 800px;
+  height: 550px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: white;
+  z-index: inherit;
+  border-radius: 5px;
+  color: #262C46; }
+  .onboarding-modal-wrap h1 {
+    color: #262C46; }
+
+.onboarding-selection-wrap-false {
+  display: none; }
+
+.onboarding-selection-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px; }
+
+.onboarding-selection-header {
+  width: 740px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 20px; }
+  .onboarding-selection-header h1 {
+    margin: 0;
+    font-weight: 600; }
+  .onboarding-selection-header h3 {
+    margin: 0;
+    font-weight: 400; }
+
+.onboarding-welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.onboarding-route-logo {
+  width: 200px;
+  height: auto;
+  margin-left: 0px;
+  margin-bottom: -8px; }
+
+.onboarding-selection-body {
+  width: 740px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.custom-merchant {
+  width: 355px;
+  height: 360px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #262C46;
+  transition: ease-in-out 0.3s;
+  border-radius: 5px; }
+  .custom-merchant:hover {
+    box-shadow: 0px 0px 15px #445072;
+    transition: ease-in-out 0.3s; }
+  .custom-merchant h2 {
+    margin: 0;
+    margin-top: 20px;
+    font-weight: 400; }
+  .custom-merchant p {
+    width: 85%;
+    text-align: center;
+    margin: 0;
+    margin-top: 10px; }
+
+.shopify-merchant {
+  width: 355px;
+  height: 360px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+  border-radius: 5px; }
+  .shopify-merchant:hover {
+    box-shadow: 0px 0px 15px #445072;
+    transition: ease-in-out 0.3s; }
+  .shopify-merchant h2 {
+    margin: 0;
+    margin-top: 20px;
+    font-weight: 400; }
+  .shopify-merchant p {
+    width: 85%;
+    text-align: center;
+    margin: 0;
+    margin-top: 10px; }
+
+.html-tag {
+  width: 120px;
+  height: auto; }
+
+.shopify-logo {
+  width: 120px;
+  height: auto; }
+
+.shopify-selection-wrap-false {
+  display: none; }
+
+.shopify-selection-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px; }
+
+.shopify-selection-body {
+  width: 740px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.shopify-selection-header {
+  width: 740px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 20px; }
+  .shopify-selection-header h1 {
+    margin: 0;
+    font-weight: 600; }
+  .shopify-selection-header h3 {
+    margin: 0;
+    font-weight: 400; }
+
+.shopify-selection-body {
+  width: 740px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.manual-install {
+  width: 355px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #262C46;
+  transition: ease-in-out 0.3s;
+  cursor: pointer; }
+  .manual-install:hover {
+    box-shadow: 0px 0px 15px #445072;
+    transition: ease-in-out 0.3s; }
+  .manual-install h2 {
+    margin: 0;
+    margin-top: 20px;
+    font-weight: 400; }
+  .manual-install p {
+    width: 85%;
+    text-align: center; }
+
+.coming-soon {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-size: 12pt;
+  margin: 0;
+  margin-top: 10px; }
+
+.not-in-beta {
+  margin: 0;
+  font-size: 10pt; }
+
+.expert-install {
+  width: 355px;
+  height: 360px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: #262C46;
+  transition: ease-in-out 0.3s; }
+  .expert-install:hover {
+    box-shadow: 0px 0px 15px #445072;
+    transition: ease-in-out 0.3s; }
+  .expert-install h2 {
+    margin: 0;
+    margin-top: 20px;
+    font-weight: 400; }
+  .expert-install p {
+    width: 85%;
+    text-align: center;
+    margin: 0;
+    margin-top: 10px; }
+
+.expert-install-false {
+  display: none; }
+
+.request-sent-false {
+  display: none; }
+
+.request-sent {
+  width: 355px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+  .request-sent h3 {
+    font-weight: 400;
+    width: 339px;
+    text-align: center; }
+
+.request-sent-thank-you {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+
+.expert-next-button {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+  .expert-next-button button {
+    width: 100px;
+    height: 35px;
+    background: #5EC7DB;
+    border: none;
+    border-radius: 5px;
+    font-size: 12pt;
+    cursor: pointer;
+    color: white;
+    outline: none; }
+
+.manual-icon {
+  width: 120px;
+  height: auto; }
+
+.expert-icon {
+  width: 120px;
+  height: auto; }
+
+.shopify-email-wrap-false {
+  display: none; }
+
+.shopify-email-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+  .shopify-email-wrap input {
+    width: 400px;
+    height: 25px;
+    padding: 5px;
+    font-size: 12pt;
+    font-family: "Titillium Web", sans-serif;
+    outline: none;
+    border: solid 1px #9799A8;
+    border-radius: 5px;
+    margin-bottom: 20px; }
+    .shopify-email-wrap input:focus {
+      border: solid 1px #5EC7DB; }
+  .shopify-email-wrap button {
+    width: 150px;
+    height: 30px;
+    border: none;
+    background: #5EC7DB;
+    border-radius: 5px;
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+    font-size: 12pt;
+    font-family: "Titillium Web", sans-serif;
+    color: white; }
+    .shopify-email-wrap button:hover {
+      box-shadow: 0px 0px 10px #445072;
+      transition: ease-in-out 0.3s; }
+
+.shopify-add-billing {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 20px; }
+
+.shopify-add-billing-false {
+  display: none; }
+
+.shopify-billing-header {
+  width: 740px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 20px; }
+  .shopify-billing-header h1 {
+    margin: 0;
+    font-weight: 600; }
+  .shopify-billing-header h3 {
+    margin: 0;
+    font-weight: 400; }
+
+.shopify-billing-label-input {
+  width: 700px;
+  height: 25px;
+  padding: 5px;
+  background: none;
+  border: solid 1px #9799A8;
+  border-radius: 5px;
+  font-size: 10pt;
+  color: #262C46;
+  outline: none; }
+
+.shopify-plaid {
+  margin-top: 20px; }
+
+.end-thanks {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 40px; }
+  .end-thanks h1 {
+    font-weight: 600; }
+  .end-thanks img {
+    width: 500px;
+    height: auto;
+    margin-top: 20px; }
+  .end-thanks button {
+    width: 150px;
+    height: 30px;
+    border: none;
+    background: #5EC7DB;
+    border-radius: 5px;
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+    font-size: 12pt;
+    font-family: "Titillium Web", sans-serif;
+    color: white;
+    margin-top: 50px; }
+    .end-thanks button:hover {
+      box-shadow: 0px 0px 10px #445072;
+      transition: ease-in-out 0.3s; }
+
+.end-thanks-false {
+  display: none; }
+
+.install-yourself-false {
+  display: none; }

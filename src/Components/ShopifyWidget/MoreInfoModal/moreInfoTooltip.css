@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700");
+@media only screen and (min-width: 769px) {
+  .react-tooltip {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    opacity: 1 !important;
+    box-shadow: 0px 0px 15px #DBDBDB;
+    border-radius: 10px;
+    font-family: "Titillium Web", sans-serif;
+    z-index: 1000; }
+  #powered-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 10px; }
+  #powered-by {
+    font-size: 10pt;
+    margin: 0; }
+  #powered-wrapper a img {
+    width: 180px;
+    height: auto; }
+  #protect-your-package {
+    margin-bottom: 0; }
+  #trusted-by {
+    font-size: 11pt;
+    color: #5EC7DB;
+    margin-top: 0; }
+  #description-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 10px 0px 5px 0px;
+    padding: 40px 0px 40px 0px;
+    border-top: solid 1px lightgray;
+    border-bottom: solid 1px lightgray; }
+  #lost {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  #damage {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  #theft {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  #lost-img {
+    width: auto;
+    height: 80px;
+    margin-right: 5px;
+    margin-bottom: 15px; }
+  #damage-img {
+    width: auto;
+    height: 83px;
+    margin-right: 5px;
+    margin-bottom: 15px; }
+  #theft-img {
+    width: auto;
+    height: 83px;
+    margin-right: 5px;
+    margin-bottom: 15px; }
+  #lost-h3 {
+    font-size: 14pt;
+    margin: 0;
+    text-align: center;
+    font-weight: 600; }
+  #damage-h3 {
+    font-size: 14pt;
+    margin: 0;
+    text-align: center;
+    font-weight: 600; }
+  #theft-h3 {
+    font-size: 14pt;
+    margin: 0;
+    text-align: center;
+    font-weight: 600; }
+  #lost-p {
+    font-size: 9pt;
+    margin: 0;
+    text-align: center;
+    margin-top: 10px; }
+  #damage-p {
+    font-size: 9pt;
+    margin: 0;
+    text-align: center;
+    margin-top: 10px; }
+  #theft-p {
+    font-size: 9pt;
+    margin: 0;
+    text-align: center;
+    margin-top: 10px; }
+  #more-info-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px 0px 20px 0px; }
+  #learn-more-terms {
+    width: 52%;
+    display: flex;
+    justify-content: center; }
+  #terms-and-conditions {
+    width: 100%;
+    font-size: 8pt;
+    line-height: 1.2;
+    text-align: center;
+    color: #9799A8;
+    margin: 0; }
+  #footer-right-wrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end; }
+  #lloyds-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; }
+  #backed-by {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 10pt;
+    margin: 0; }
+  #lloyds-logo {
+    width: 80px;
+    height: auto;
+    margin-left: 5px; }
+  #get-route-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  #get-route-business {
+    text-decoration: none;
+    color: black;
+    font-size: 9pt; } }

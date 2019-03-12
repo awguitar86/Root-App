@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700");
+.edit-user-wrap {
+  width: 100vw;
+  height: 100vh;
+  background: #1A1E37;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.edit-user-header {
+  width: 95vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid 1px white;
+  margin-top: 60px; }
+  .edit-user-header button {
+    width: 60px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 10pt;
+    background: #9799A8;
+    color: #1A1E37;
+    outline: none;
+    cursor: pointer; }
+    .edit-user-header button:hover {
+      background: #445072;
+      transition: ease-in-out 0.3s;
+      color: #9799A8; }
+
+.edit-user-header-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  .edit-user-header-left h2 {
+    font-weight: normal;
+    color: white;
+    margin: 0; }
+
+.edit-user-header-note {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  margin-top: 10px; }
+  .edit-user-header-note p {
+    margin-left: 3px;
+    margin-right: 3px;
+    margin: 0; }
+  .edit-user-header-note h3 {
+    color: #E64688;
+    margin: 0; }
+
+.edit-user {
+  width: 95vw;
+  background: #262C46;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 5px;
+  color: #9799A8; }
+
+.edit-user-name {
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px; }
+  .edit-user-name div h4 {
+    margin: 0;
+    margin-bottom: 8px; }
+  .edit-user-name div input {
+    width: 42vw;
+    height: 20px;
+    padding: 5px;
+    background: none;
+    border: solid 1px #9799A8;
+    border-radius: 5px;
+    font-size: 10pt;
+    color: #9799A8;
+    outline: none; }
+    .edit-user-name div input:focus {
+      border: solid 1px #45DCE5; }
+
+.edit-user-email {
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px; }
+  .edit-user-email div h4 {
+    margin: 0;
+    margin-bottom: 8px; }
+  .edit-user-email div input {
+    width: 42vw;
+    height: 20px;
+    padding: 5px;
+    background: none;
+    border: solid 1px #9799A8;
+    border-radius: 5px;
+    font-size: 10pt;
+    color: #9799A8;
+    outline: none; }
+    .edit-user-email div input:focus {
+      border: solid 1px #45DCE5; }
+
+.edit-user-role {
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px; }
+  .edit-user-role div h4 {
+    margin: 0;
+    margin-bottom: 8px; }
+
+.phone {
+  width: 42vw;
+  height: 20px;
+  padding: 5px;
+  background: none;
+  border: solid 1px #9799A8;
+  border-radius: 5px;
+  font-size: 10pt;
+  color: #9799A8;
+  outline: none; }
+  .phone:focus {
+    border: solid 1px #45DCE5; }
+
+.platform-role {
+  width: 42vw;
+  height: 20px;
+  padding: 5px;
+  background: none;
+  border: solid 1px #9799A8;
+  border-radius: 5px;
+  font-size: 10pt;
+  color: #9799A8;
+  outline: none; }
+  .platform-role:focus {
+    border: solid 1px #45DCE5; }
+
+.platform-role-false {
+  display: none; }
+
+.merchant-role {
+  width: 42vw;
+  height: 20px;
+  padding: 5px;
+  background: none;
+  border: solid 1px #9799A8;
+  border-radius: 5px;
+  font-size: 10pt;
+  color: #9799A8;
+  outline: none; }
+  .merchant-role:focus {
+    border: solid 1px #45DCE5; }
+
+.merchant-role-false {
+  display: none; }
+
+.edit-user-save-button {
+  width: 90vw;
+  margin: 20px 0px 20px 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 30px; }
+
+.save {
+  width: 80px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 10pt;
+  background: #45DCE5;
+  color: #1A1E37;
+  outline: none;
+  cursor: pointer; }
+  .save:hover {
+    background: #445072;
+    transition: ease-in-out 0.3s;
+    color: #45DCE5; }
+
+.save:active {
+  border: solid 1px #262C46;
+  width: 80px; }
+
+.save-false {
+  display: none; }
+
+.saving {
+  display: none; }
+
+.saving-true {
+  display: block;
+  width: 80px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 10pt;
+  background: #445072;
+  color: #45DCE5;
+  outline: none; }
+
+.saved {
+  display: none; }
+
+.saved-true {
+  display: block;
+  width: 80px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 10pt;
+  background: #45DCE5;
+  color: #1A1E37;
+  outline: none; }

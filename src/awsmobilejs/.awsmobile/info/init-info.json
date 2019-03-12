@@ -1,0 +1,23 @@
+{
+	"projectPath": "/Users/awguitar86/Route/RouteApp/RouteApp-2.0/RouteApp-2.0-FrontEnd/src",
+	"mobileProjectID": "14b9bd09-c9ee-484d-bf34-7186cd0a234f",
+	"projectInfo": {
+		"ProjectName": "src",
+		"ProjectPath": "/Users/awguitar86/Route/RouteApp/RouteApp-2.0/RouteApp-2.0-FrontEnd/src",
+		"InitializationTime": "",
+		"LastConfigurationTime": "",
+		"LastNPMInstallTime": "",
+		"FrontendLastBuildTime": "",
+		"LastPublishTime": "",
+		"BackendLastSyncTime": "",
+		"BackendLastBuildTime": "",
+		"BackendLastPushTime": "",
+		"BackendProjectID": "",
+		"BackendProjectName": "",
+		"BackendProjectConsoleUrl": "",
+		"BackendProjectCreationTime": "",
+		"BackendProjectLastUpdatedTime": ""
+	},
+	"initialStage": "clean-slate",
+	"strategy": "link"
+}

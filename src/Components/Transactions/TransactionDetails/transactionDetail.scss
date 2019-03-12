@@ -1,0 +1,209 @@
+@import '../../_colors.scss';
+
+.trans-detail-wrap {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: $background;
+}
+
+.trans-detail-header {
+    width: 95vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    border-bottom: solid 1px white;
+    margin-top: 60px;
+    // border: solid white;
+    h2 {
+        font-weight: normal;
+    }
+    button {
+        width: 60px;
+        height: 25px;
+        border: none;
+        border-radius: 5px;
+        font-size: 10pt;
+        background: $text;
+        color: $background;
+        outline: none;
+        cursor: pointer;
+        &:hover {
+            background: $maps;
+            transition: ease-in-out 0.3s;
+            color: $text;
+        }
+    }
+}
+
+.trans-detail-body {
+    width: 95vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.order-info {
+    width: 46vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: $sections;
+}
+.order-id {
+    width: 42vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    // border: solid 1px white;
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12pc;
+        border: solid 2px $teal;
+        padding: 5px 15px 5px 15px;
+        margin-right: 10px;
+        h2 {
+            margin: 0;
+            color: ghostwhite;
+            font-weight: 200;
+        }
+    }
+    h2 {
+        margin: 0;
+        font-weight: normal;
+        color: #9799A8;
+    }
+}
+
+.order-info-body {
+    width: 42vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    // border: solid 1px red;
+}
+
+.order-info-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.left-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 25px;
+    img {
+        width: 40px;
+        height: auto;
+        margin-right: 10px;
+    }
+}
+.left-item-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    h4 {
+        margin: 0;
+        color: $text;
+    }
+    p {
+        color: white;
+        font-weight: normal;
+        margin: 0;
+    }
+}
+
+.order-info-middle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.middle-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 25px;
+    img {
+        width: 40px;
+        height: auto;
+        margin-right: 10px;
+    }
+}
+.middle-item-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    h4 {
+        margin: 0;
+        color: $text;
+    }
+    p {
+        color: white;
+        font-weight: normal;
+        margin: 0;
+    }
+}
+
+.order-info-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.right-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 25px;
+    img {
+        width: 40px;
+        height: auto;
+        margin-right: 10px;
+    }
+}
+.right-item-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    h4 {
+        margin: 0;
+        color: $text;
+    }
+    p {
+        color: white;
+        font-weight: normal;
+        margin: 0;
+    }
+}
+
+.transaction-number {
+    width: 42vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    h4 {
+        margin: 0;
+        color: $text;
+        margin-right: 8px;
+    }
+    h3 {
+        font-weight: normal;
+        color: white;
+        margin: 0;
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "REGION":"us-west-2",
+    "USER_POOL_ID":"us-west-2_KhTHF1JfJ",
+    "IDENTITY_POOL_ID":"us-west-2:6e5da420-ad33-4f9e-9254-252efc108740",
+    "APP_CLIENT_ID":"39pv1fo91nsjsmt5508fcqfd4f",
+    "BASE_URL":"https://2-ebs.routeapp.io",
+    "PLAID" : "https://production.plaid.com",
+    "PLAID_ENV" : "production",
+    "PLAID_PUBLIC_KEY" : "35e7455ec033851a2c8860a267f78d",
+    "LAMBDA_SYNC" : "https://dk9trhbmi2.execute-api.us-west-2.amazonaws.com/default/rds-cognito-sync",
+    "ONBOARDING_EMAIL" : "https://jlf9e31eie.execute-api.us-west-2.amazonaws.com/PROD/emailer"
+}

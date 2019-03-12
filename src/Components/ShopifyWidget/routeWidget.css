@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700");
+#route-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000 !important;
+  border-radius: 0;
+  clear: none;
+  clip: auto;
+  counter-increment: none;
+  counter-reset: none;
+  cursor: auto;
+  font-size: inherit;
+  font-family: "Titillium Web", sans-serif;
+  font-variant: normal;
+  opacity: 1;
+  padding: 10px 0px;
+  text-decoration: none;
+  text-transform: none;
+  unicode-bidi: normal;
+  bottom: 0 !important;
+  padding: 10px; }
+
+#route-content {
+  width: 490.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+  color: #000 !important;
+  transition: ease-in-out 0.3s; }
+
+#route-content-checked {
+  width: 490.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+  border: none;
+  color: #000 !important; }
+
+#widget-top {
+  width: 490.5px;
+  height: 25px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer; }
+
+#route-check {
+  width: 35px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+
+#rightside {
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: #69727b; }
+
+#widget-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 11pt; }
+
+#widget-ship-protect {
+  font-size: 11pt;
+  display: flex;
+  margin: 0;
+  font-weight: 600; }
+
+#routeq {
+  margin-left: 5px;
+  font-weight: 600; }
+
+#route-widget-logo {
+  width: 90px;
+  height: auto;
+  margin-right: 10px; }
+
+#widget-bottom {
+  width: 490.5px;
+  height: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  cursor: pointer; }
+
+#protect-from {
+  height: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  font-size: 10pt;
+  margin-left: 65px; }
+
+#fully-protect-from {
+  margin: 0;
+  color: #69727b;
+  font-weight: 300; }
+
+#widget-more-info {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#routehelp-tooltip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer; }
+
+#routehelp-tooltip img {
+  width: 15px;
+  height: auto;
+  margin-left: 3px;
+  margin-top: 1px; }
+
+#routehelp-modal {
+  display: none; }
+
+@media only screen and (max-width: 991px) {
+  #route-content {
+    width: 698px; }
+  #route-content-checked {
+    width: 698px; }
+  #widget-top {
+    width: 698px; }
+  #widget-bottom {
+    width: 698px; } }
+
+@media only screen and (max-width: 768px) {
+  #route-content {
+    width: 100%; }
+  #route-content-checked {
+    width: 100%; }
+  #widget-top {
+    width: 100%; }
+  #widget-bottom {
+    width: 100%; }
+  #routehelp-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer; }
+  #routehelp-modal img {
+    width: 15px;
+    height: auto;
+    margin-left: 3px;
+    margin-top: 1px; }
+  #routehelp-tooltip {
+    display: none; } }
+
+@media only screen and (max-width: 440px) {
+  #route-widget-logo {
+    width: 80px; }
+  #widget-ship-protect {
+    font-size: 10pt; }
+  #protect-from {
+    margin-left: 15%; }
+  #fully-protect-from {
+    font-size: 9pt; } }
+
+@media only screen and (max-width: 414px) {
+  #protect-from {
+    margin-left: 15.5%; } }
+
+@media only screen and (max-width: 375px) {
+  #protect-from {
+    margin-left: 16%; } }
+
+@media only screen and (max-width: 350px) {
+  #route-widget-logo {
+    width: 70px;
+    margin-right: 5px; }
+  #rightside {
+    width: 195px; }
+  #widget-ship-protect {
+    font-size: 9pt; }
+  #protect-from {
+    margin-left: 18%; }
+  #fully-protect-from {
+    font-size: 8pt; }
+  #routehelp img {
+    width: 13px; } }

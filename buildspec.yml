@@ -1,0 +1,20 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo $ENVIRONMENT
+      - mv src/config-${ENVIRONMENT}.json src/config.json
+      - npm install
+      - npm run-script build
+      - aws s3 cp build/ s3://${BUCKET_NAME}/ --recursive
+      - aws s3 cp s3://${BUCKET_NAME}/index.html s3://${BUCKET_NAME}/index.html --metadata-directive REPLACE --cache-control max-age=0
+      - rm -rf build/
+      - rm -rf node_modules/
+      - mv src/config-SHOPIFY_${ENVIRONMENT}.json src/config.json
+      - npm install
+      - npm run-script build
+      - aws s3 cp build/ s3://${BUCKET_NAME_SHOPIFY}/ --recursive
+      - aws s3 cp s3://${BUCKET_NAME_SHOPIFY}/index.html s3://${BUCKET_NAME_SHOPIFY}/index.html --metadata-directive REPLACE --cache-control max-age=0
+

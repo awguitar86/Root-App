@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700");
+.shipping-stats {
+  width: 95vw;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 40px; }
+
+.delivered {
+  color: white;
+  width: 22vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative; }
+  .delivered img {
+    width: 22vw;
+    height: auto; }
+  .delivered p {
+    font-size: 32pt;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    right: 25px;
+    margin: 0; }
+
+.out-for-delivery {
+  color: white;
+  width: 22vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative; }
+  .out-for-delivery img {
+    width: 22vw;
+    height: auto; }
+  .out-for-delivery p {
+    font-size: 32pt;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    right: 25px;
+    margin: 0; }
+
+.in-transit {
+  color: white;
+  width: 22vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative; }
+  .in-transit img {
+    width: 22vw;
+    height: auto; }
+  .in-transit p {
+    font-size: 32pt;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    right: 25px;
+    margin: 0; }
+
+.exception {
+  color: white;
+  width: 22vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative; }
+  .exception img {
+    width: 22vw;
+    height: auto; }
+  .exception p {
+    font-size: 32pt;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    right: 25px;
+    margin: 0; }

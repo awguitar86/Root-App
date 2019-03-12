@@ -1,0 +1,25 @@
+@import '../_colors.scss';
+
+.animate-button-wrap {
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animate-button-circle {
+    border: solid 2px $route-teal;
+    border-radius: 12pc;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animate-line {
+    width: 106px;
+    height: 2px;
+    background: $maps;
+}

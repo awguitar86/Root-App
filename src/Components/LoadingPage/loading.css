@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700");
+.loading-wrap {
+  background: #1A1E37;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; }
+  .loading-wrap h2 {
+    color: #ABF8FF;
+    margin-bottom: 50px;
+    margin-top: 40px;
+    font-weight: normal; }
+
+@keyframes loading {
+  0% {
+    transform-origin: 100% 100%;
+    transform: rotate(0deg); }
+  100% {
+    transform-origin: 100% 100%;
+    transform: rotate(360deg); } }
+
+.loading {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 13;
+  margin: 15px auto;
+  margin-top: 150px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: transparent; }
+  .loading:before {
+    position: absolute;
+    display: block;
+    content: '';
+    z-index: 12;
+    top: 1px;
+    left: 1px;
+    width: 198px;
+    height: 198px;
+    border-radius: 50%;
+    background-color: #1A1E37; }
+  .loading:after {
+    position: absolute;
+    display: block;
+    content: '';
+    z-index: 11;
+    top: 0px;
+    left: 0px;
+    width: 100px;
+    height: 100px;
+    border-radius: 200px 0 0 0;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0) 0%, #45DCE5 50%, #45DCE5 100%);
+    animation: loading 1.2s linear infinite; }
+  .loading img {
+    display: block;
+    z-index: 20;
+    width: 140px;
+    height: auto; }

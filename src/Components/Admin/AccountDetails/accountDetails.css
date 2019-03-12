@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700");
+.account-wrap {
+  width: 100vw;
+  height: 100vh;
+  background: #1A1E37;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 300px; }
+
+.account-header {
+  width: 95vw;
+  border-bottom: solid 1px white;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .account-header h2 {
+    font-weight: normal;
+    color: white; }
+
+.api-key {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+
+.get-api-key {
+  width: 150px;
+  height: 30px;
+  background: #9799A8;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: ease-in-out 0.3s;
+  cursor: pointer; }
+  .get-api-key:hover {
+    background: #445072;
+    transition: ease-in-out 0.3s; }
+
+.get-api-key-true {
+  display: none; }
+
+.show-api-key-false {
+  display: none; }
+
+.show-api-key {
+  width: 300px;
+  height: 30px;
+  border: solid 1px #45DCE5;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .show-api-key p {
+    color: white; }
+
+.account-content {
+  width: 95vw;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #9799A8;
+  margin-top: 30px;
+  background: #262C46;
+  border-radius: 5px; }
+
+.account-body {
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.account-name-wrap {
+  width: 22.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; }
+  .account-name-wrap img {
+    width: 40px;
+    height: auto; }
+
+.account-type-wrap {
+  width: 22.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; }
+  .account-type-wrap img {
+    width: 50px;
+    height: auto; }
+
+.account-id-wrap {
+  width: 22.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; }
+  .account-id-wrap img {
+    width: 60px;
+    height: auto; }
+
+.account-created-wrap {
+  width: 22.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; }
+  .account-created-wrap img {
+    width: 40px;
+    height: auto; }
+
+.account-info-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 20px; }
+  .account-info-text h4 {
+    margin: 0;
+    margin-right: 10px; }
+  .account-info-text p {
+    margin: 0;
+    color: white; }
+
+.users-header {
+  width: 95vw;
+  border-bottom: solid 1px white;
+  margin-top: 20px; }
+  .users-header h2 {
+    font-weight: normal;
+    color: white; }
+
+.users {
+  width: 95vw;
+  background: #262C46;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 5px; }
+
+.users-table {
+  padding-top: 30px;
+  padding-bottom: 20px; }
+
+.users-table-head {
+  width: 90vw; }
+  .users-table-head tr {
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    border-bottom: solid 1px #9799A8;
+    margin-bottom: 5px; }
+    .users-table-head tr th {
+      width: 22.5vw;
+      color: #9799A8;
+      text-align: left; }
+      .users-table-head tr th a {
+        text-decoration: none;
+        color: white;
+        font-weight: normal;
+        text-align: left; }
+
+.users-table-body tr {
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  border-bottom: solid 1px #9799A8;
+  margin-bottom: 5px; }
+  .users-table-body tr td {
+    width: 22.5vw;
+    color: #9799A8;
+    text-align: left; }
+    .users-table-body tr td a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      text-align: left; }
+
+.add-new-user-button {
+  width: 90vw;
+  margin: 20px 0px 20px 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+  .add-new-user-button button {
+    width: 120px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 10pt;
+    background: #45DCE5;
+    color: #1A1E37;
+    outline: none;
+    cursor: pointer; }
+    .add-new-user-button button:hover {
+      background: #445072;
+      transition: ease-in-out 0.3s;
+      color: #45DCE5; }

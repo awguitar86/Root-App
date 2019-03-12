@@ -1,0 +1,87 @@
+@import '../_colors.scss';
+
+.signup {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.signup-route-logo {
+  width: 500px;
+  height: auto;
+}
+
+.signup-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  h1 {
+    color: $route-dark;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    input {
+      width: 400px;
+      height: 25px;
+      margin-bottom: 15px;
+      border: solid 1px $route-dark;
+      border-radius: 4px;
+      padding: 5px;
+      outline: none;
+      font-size: 12pt;
+      font-family: $font;
+    }
+
+    button {
+      width: 412px;
+      height: 35px;
+      border-radius: 4px;
+      margin-top: 20px;
+      background: $route-teal;
+      border: none;
+      color: white;
+      font-size: 12pt;
+      font-family: $font;
+      font-weight: 600;
+      cursor: pointer;
+      &:disabled {
+        width: 412px;
+        height: 35px;
+        border-radius: 4px;
+        margin-top: 20px;
+        background: lightgray;
+        border: none;
+        color: white;
+        font-size: 12pt;
+        font-family: $font;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.no-error {
+  display: none;
+}
+
+.error-message {
+  color: red;
+}
+
+.back-to-login {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    color: $route-dark;
+    cursor: pointer;
+  }
+}

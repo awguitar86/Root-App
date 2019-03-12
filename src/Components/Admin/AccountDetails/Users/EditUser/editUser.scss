@@ -1,0 +1,265 @@
+@import '../../../../_colors.scss';
+
+.edit-user-wrap {
+    width: 100vw;
+    height: 100vh;
+    background: $background;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.edit-user-header {
+    width: 95vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px white;
+    margin-top: 60px;
+        button {
+            width: 60px;
+            height: 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 10pt;
+            background: $text;
+            color: $background;
+            outline: none;
+            cursor: pointer;
+            &:hover {
+                background: $maps;
+                transition: ease-in-out 0.3s;
+                color: $text;
+            }
+        }
+}
+
+.edit-user-header-left {
+    // border: solid gold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    h2 {
+        font-weight: normal;
+        color: white;
+        margin: 0;
+    }
+}
+
+.edit-user-header-note {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    margin-top: 10px;
+    p{
+        margin-left: 3px;
+        margin-right: 3px;
+        margin: 0;
+    }
+    h3 {
+        color: $pink-red;
+        margin: 0;
+    }
+}
+
+.edit-user {
+    width: 95vw;
+    background: $sections;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: $text;
+}
+
+.edit-user-name {
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    // border: solid 1px red;
+    div {
+        h4 {
+            margin: 0;
+            margin-bottom: 8px;
+        }
+        input {
+            width: 42vw;
+            height: 20px;
+            padding: 5px;
+            background: none;
+            border: solid 1px $text;
+            border-radius: 5px;
+            font-size: 10pt;
+            color: $text;
+            outline: none;
+            &:focus {
+                border: solid 1px $teal;
+            }
+        }
+    }
+}
+.edit-user-email {
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    // border: solid 1px green;
+    div {
+        h4 {
+            margin: 0;
+            margin-bottom: 8px;
+        }
+        input {
+            width: 42vw;
+            height: 20px;
+            padding: 5px;
+            background: none;
+            border: solid 1px $text;
+            border-radius: 5px;
+            font-size: 10pt;
+            color: $text;
+            outline: none;
+            &:focus {
+                border: solid 1px $teal;
+            }
+        }
+    }
+}
+
+.edit-user-role {
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    div {
+        h4 {
+            margin: 0;
+            margin-bottom: 8px;
+        }
+    }
+}
+
+.phone {
+    width: 42vw;
+    height: 20px;
+    padding: 5px;
+    background: none;
+    border: solid 1px $text;
+    border-radius: 5px;
+    font-size: 10pt;
+    color: $text;
+    outline: none;
+    &:focus {
+        border: solid 1px $teal;
+    }
+}
+
+.platform-role {
+    width: 42vw;
+    height: 20px;
+    padding: 5px;
+    background: none;
+    border: solid 1px $text;
+    border-radius: 5px;
+    font-size: 10pt;
+    color: $text;
+    outline: none;
+    &:focus {
+        border: solid 1px $teal;
+    }
+}
+
+.platform-role-false {
+    display: none;
+}
+
+.merchant-role {
+    width: 42vw;
+    height: 20px;
+    padding: 5px;
+    background: none;
+    border: solid 1px $text;
+    border-radius: 5px;
+    font-size: 10pt;
+    color: $text;
+    outline: none;
+    &:focus {
+        border: solid 1px $teal;
+    }
+}
+
+.merchant-role-false {
+    display: none;
+}
+
+.edit-user-save-button {
+    width: 90vw;
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.save {
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 10pt;
+    background: $teal;
+    color: $background;
+    outline: none;
+    cursor: pointer;
+    &:hover {
+        background: $maps;
+        transition: ease-in-out 0.3s;
+        color: $teal;
+    }
+}
+.save:active {
+    border: solid 1px $sections;
+    width: 80px;
+}
+.save-false {
+    display: none;
+}
+
+.saving {
+    display: none;
+}
+.saving-true {
+    display: block;
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 10pt;
+    background: $maps;
+    color: $teal;
+    outline: none;
+}
+
+.saved {
+    display: none;
+}
+.saved-true {
+    display: block;
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 10pt;
+    background: $teal;
+    color: $background;
+    outline: none;
+}

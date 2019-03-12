@@ -1,0 +1,54 @@
+
+Store Juan
+{
+    "store_identifier": "STORE-pMTCYtl+k8e1BcnBbEVNzg==xy_z-=XYZ.w0Wcxn/XLOkUmBwE3JbQ+aEaKe70ElHoGoRkbNHessc=H?_3.2^aVSuhPNzU1wqkQd5liE2ag==",
+    "note": "Store created within the platform provided."
+}
+
+Dos Store
+{
+    "store_identifier": "STORE-L77vU+nep5PYRBhrWFv0Ig==xy_z-=XYZ.PxbRlMGuez8Wz/gVrTwRNET/is2ybv3qEXq1CrumSHY=H?_3.2^bEtuAMvgU1qqZIKBA9xMCw==",
+    "note": "Store created within the platform provided."
+}
+
+Transaction ID 2896
+{
+    "route_quote_id": "5ff1b3c0:165367483db:-8000",
+    "route_quote_public_token": "795882",
+    "route_quote_private_token": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1NDRiMjNlOTY2ZTI0Yzg1YTZlZTNkMGIyZmQ3OGFhMSIsImlhdCI6MTUzNDIxNjkzMCwibmJmIjoxNTM0MjE2OTMwLCJleHAiOjE1MzQ1NjI1MzAsInF1b3RlUHJpdmF0ZVRva2VuIjoie1wicm91dGVRdW90ZUFtb3VudFwiOm51bGwsXCJzdWJ0b3RhbFwiOjE5Ljk5fSJ9.BP7zJYo8H5cUb7wsH3xoWhAnxdLRmyEaUs8-cVXMzTQ",
+    "timestamp": "2018-08-14T03:22:10.205+0000",
+    "route_quote_amount": 0.979999999999999982236431605997495353221893310546875,
+    "error_message": "no error"
+}
+{
+    "route_quote_id": "6834c2d7:165367ebfa8:-8000",
+    "route_quote_public_token": "845429",
+    "route_quote_private_token": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxNjVkMDM4Zjc3ZDU0NzBhYWNiOGEwYjkzOTI0ZjI5ZSIsImlhdCI6MTUzNDIxNzYwMCwibmJmIjoxNTM0MjE3NjAwLCJleHAiOjE1MzQ1NjMyMDAsInF1b3RlUHJpdmF0ZVRva2VuIjoie1wicm91dGVRdW90ZUFtb3VudFwiOm51bGwsXCJzdWJ0b3RhbFwiOjE5Ljk5fSJ9.bZUTN8E-bMVHIR4nqnlUGM3yheH2QcczCnN3js8fkb0",
+    "timestamp": "2018-08-14T03:33:20.873+0000",
+    "route_quote_amount": 0.98,
+    "error_message": "no error"
+}
+{
+    "route_quote_id": "6834c2d7:165367ebfa8:-7fff",
+    "route_quote_public_token": "631386",
+    "route_quote_private_token": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI4YzUyNTQzODIyMjE0ZDZhYmNjMGVmN2RlMGI5MTQ1NCIsImlhdCI6MTUzNDIxODM0NiwibmJmIjoxNTM0MjE4MzQ2LCJleHAiOjE1MzQ1NjM5NDYsInF1b3RlUHJpdmF0ZVRva2VuIjoie1wicm91dGVRdW90ZUFtb3VudFwiOm51bGwsXCJzdWJ0b3RhbFwiOjE5Ljk5fSJ9.l7uRSIoTTlcuJX9SAr6Wwb5fXZBCdOOrdtrF9TzqROw",
+    "timestamp": "2018-08-14T03:45:46.342+0000",
+    "route_quote_amount": 0.98,
+    "error_message": "no error"
+}
+{
+    "route_quote_id": "6834c2d7:165367ebfa8:-7ffe",
+    "route_quote_public_token": "762883",
+    "route_quote_private_token": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxMzU3NzMzODExY2E0NmIzOGMyNTEzN2YyYmIxMWFlNiIsImlhdCI6MTUzNDIxODY0MSwibmJmIjoxNTM0MjE4NjQxLCJleHAiOjE1MzQ1NjQyNDEsInF1b3RlUHJpdmF0ZVRva2VuIjoie1wicm91dGVRdW90ZUFtb3VudFwiOm51bGwsXCJzdWJ0b3RhbFwiOjE5Ljk5fSJ9.lxEkM0HWEwhBmJbMYB-ppQpcJdLR4hqOfVZ6-Q8N0t4",
+    "timestamp": "2018-08-14T03:50:41.641+0000",
+    "route_quote_amount": 0.98,
+    "error_message": "no error"
+}
+{
+    "route_quote_id": "6834c2d7:165367ebfa8:-7ffd",
+    "route_quote_public_token": "504291",
+    "route_quote_private_token": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJmN2EzNWMxYTBkNjg0ZWVhOWI4YmQyN2RhY2FiODYwYiIsImlhdCI6MTUzNDIxODc3OSwibmJmIjoxNTM0MjE4Nzc5LCJleHAiOjE1MzQ1NjQzNzksInF1b3RlUHJpdmF0ZVRva2VuIjoie1wicm91dGVRdW90ZUFtb3VudFwiOm51bGwsXCJzdWJ0b3RhbFwiOjE5Ljk5fSJ9.dqTA9gGE6dNVlN32xu1L8MoxDFr4Lc2cWl3wvQl10yw",
+    "timestamp": "2018-08-14T03:52:59.945+0000",
+    "route_quote_amount": 0.98,
+    "error_message": "no error"
+}

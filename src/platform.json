@@ -1,0 +1,26 @@
+{
+    "id": null,
+    "platform": null,
+    "owner": {
+      "id": null,
+      "name": "",
+      "role_names": null
+    },
+    "total_insured": null,
+    "number_of_insured": null,
+    "uptake_percent": null,
+    "url": "",
+    "name": null,
+    "account_type": "PLATFORM",
+    "created_date": "",
+    "claim_approval_percent": 0,
+    "total_transactions": 0,
+    "total_claims": 0,
+    "approved_claims": 0,
+    "pending": 0,
+    "denied": 0,
+    "delivered": 0,
+    "out_for_delivery": 0,
+    "in_transit": 0,
+    "exception": 0
+  }

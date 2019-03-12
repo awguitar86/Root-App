@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700");
+.trans-wrap {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #1A1E37; }
+
+.trans-body {
+  width: 95vw;
+  height: 60vh;
+  margin-top: 60px; }
+
+.trans-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  border-bottom: solid 1px white; }
+  .trans-header h2 {
+    font-weight: normal; }
+  .trans-header input {
+    width: 150px;
+    height: 20px;
+    background: none;
+    border: solid 1px #9799A8;
+    border-radius: 4px;
+    outline: none;
+    color: #9799A8;
+    font-size: 11pt; }
+
+.transactions {
+  width: 95vw;
+  height: 60vh;
+  background: #262C46;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 5px; }
+
+.transactions-header {
+  width: 95vw;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background: #303757;
+  border-radius: 5px 5px 0px 0px; }
+  .transactions-header input {
+    width: 150px;
+    height: 15px;
+    background: none;
+    border: solid 1px #9799A8;
+    border-radius: 4px;
+    outline: none;
+    color: #9799A8;
+    font-size: 11pt;
+    margin-left: 42px;
+    padding: 5px; }
+
+.transaction-table {
+  padding-top: 30px;
+  margin-bottom: 20px; }
+
+.trans-table-head {
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  border-bottom: solid 1px #9799A8;
+  margin-bottom: 5px; }
+  .trans-table-head p {
+    width: 10vw;
+    color: #9799A8;
+    text-align: left;
+    margin: 0; }
+    .trans-table-head p a {
+      text-decoration: none;
+      color: white;
+      font-weight: normal; }
+
+.trans-table-body {
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  scroll-behavior: smooth; }
+
+.trans-table-body-rows {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  border-bottom: solid 1px #9799A8;
+  margin-bottom: 5px; }
+  .trans-table-body-rows p {
+    width: 10vw;
+    color: #9799A8;
+    text-align: left;
+    margin: 0; }
+    .trans-table-body-rows p a {
+      text-decoration: none;
+      color: #45DCE5;
+      font-weight: normal; }
+
+.trans-entries p {
+  color: #9799A8; }

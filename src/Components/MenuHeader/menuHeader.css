@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700");
+.menu-body {
+  width: 100vw;
+  background: #262C46;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: fixed;
+  z-index: 100; }
+
+.menu-wrap {
+  width: 95vw;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center; }
+  .menu-wrap a {
+    text-decoration: none; }
+
+.menu-logo {
+  width: 160px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .menu-logo img {
+    width: 160px;
+    height: auto; }
+
+.menu-nav {
+  display: flex; }
+
+.menu-item {
+  width: 160px;
+  height: 60px;
+  color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer; }
+
+.menu-logout {
+  width: 70px;
+  height: 60px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer; }
+  .menu-logout img {
+    width: 14px;
+    height: auto; }
+  .menu-logout p {
+    font-size: 11pt;
+    border-bottom: solid 1px #262C46; }
+    .menu-logout p:hover {
+      border-bottom: solid 1px #45DCE5; }
+
+.menu-item-icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px; }
+  .menu-item-icon img {
+    width: 14px;
+    height: auto; }
+
+.menu-item-text {
+  width: 100px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; }
+  .menu-item-text p {
+    font-size: 11pt;
+    border-bottom: solid 1px #262C46; }
+    .menu-item-text p:hover {
+      border-bottom: solid 1px #45DCE5; }
+
+.submenu-text p {
+  font-size: 10pt;
+  margin-left: 18px; }
+
+.menu-arrows {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.down-arrow {
+  width: 15px;
+  height: auto; }
+
+.up-arrow {
+  display: none; }
+
+.reports {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 100px;
+  width: 30px;
+  text-decoration: none;
+  color: white;
+  font-size: 11pt;
+  cursor: pointer; }
+
+.admin {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 100px;
+  width: 30px;
+  text-decoration: none;
+  color: white;
+  font-size: 11pt;
+  cursor: pointer; }

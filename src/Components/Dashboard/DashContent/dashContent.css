@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700");
+.dashboard-content {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #1A1E37; }
+
+.dashboard-content-header {
+  width: 95vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px; }
+  .dashboard-content-header h2 {
+    display: flex;
+    color: white;
+    font-weight: normal; }
+
+.merchant-select-back-button {
+  width: 250px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  outline: none; }
+
+.merchant-select-back-button-false {
+  display: none; }

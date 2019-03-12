@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700");
+.home-body {
+  width: 100vw;
+  height: 100vh;
+  background: #262C46;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; }
+  .home-body h1 {
+    color: #5EC7DB;
+    font-weight: 600; }

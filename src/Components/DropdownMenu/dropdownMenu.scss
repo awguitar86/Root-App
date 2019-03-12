@@ -1,0 +1,49 @@
+@import '../_colors.scss';
+// .venues {
+//     position: absolute;
+//     left: 150px;
+//     top: 15px;
+//     width: 100px;
+//     width: 30px;
+//     text-decoration: none;
+//     color: white;
+// }
+
+// .venues:hover {
+//     color: #BE1E2D;
+// }
+.dropdown-menu-body {
+    position: relative;
+    width: 60px;
+}
+
+.dropdown-menu {
+    background-color: $sections;
+    position: absolute;
+    width: 160px;
+    top: 20px;
+    left: -23px;
+    padding-top: 20px;
+    // border: solid 1px red;
+  }
+
+.dropdown-menu-text-box {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+.dropdown-menu-text {
+    color: white;
+    font-family: Verdana;
+    text-decoration: none;
+    font-size: 10pt;
+    border-bottom: solid 1px $sections;
+    margin-left: 15px;
+    &:hover {
+        border-bottom: solid 1px $teal;
+      }
+  }

@@ -1,0 +1,38 @@
+@import '../../_colors.scss';
+
+.dashboard-content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $background;
+    // padding-left: 40px;
+    // border: solid red;
+}
+
+.dashboard-content-header {
+    width: 95vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // border: solid gold;
+    margin-top: 60px;
+    h2 {
+        display: flex;
+        color: white;
+        font-weight: normal;
+    }
+}
+
+.merchant-select-back-button {
+    width: 250px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.merchant-select-back-button-false {
+    display: none;
+}

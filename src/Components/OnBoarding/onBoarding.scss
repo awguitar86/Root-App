@@ -1,0 +1,28 @@
+@import '../_colors.scss';
+
+.route-modal {
+    width: 95vw;
+    border: none;
+    outline: none;
+    font-family: $font;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // position: absolute;
+    // top: 40px;
+    // left: 40px;
+    // right: 40px;
+    // bottom: 40px;
+  }
+
+.route-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00000030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

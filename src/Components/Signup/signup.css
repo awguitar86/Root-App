@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700");
+.signup {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; }
+
+.signup-route-logo {
+  width: 500px;
+  height: auto; }
+
+.signup-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px; }
+  .signup-wrapper h1 {
+    color: #313942; }
+  .signup-wrapper form {
+    display: flex;
+    flex-direction: column; }
+    .signup-wrapper form input {
+      width: 400px;
+      height: 25px;
+      margin-bottom: 15px;
+      border: solid 1px #313942;
+      border-radius: 4px;
+      padding: 5px;
+      outline: none;
+      font-size: 12pt;
+      font-family: "Titillium Web", sans-serif; }
+    .signup-wrapper form button {
+      width: 412px;
+      height: 35px;
+      border-radius: 4px;
+      margin-top: 20px;
+      background: #5EC7DB;
+      border: none;
+      color: white;
+      font-size: 12pt;
+      font-family: "Titillium Web", sans-serif;
+      font-weight: 600;
+      cursor: pointer; }
+      .signup-wrapper form button:disabled {
+        width: 412px;
+        height: 35px;
+        border-radius: 4px;
+        margin-top: 20px;
+        background: lightgray;
+        border: none;
+        color: white;
+        font-size: 12pt;
+        font-family: "Titillium Web", sans-serif;
+        font-weight: 600; }
+
+.no-error {
+  display: none; }
+
+.error-message {
+  color: red; }
+
+.back-to-login {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .back-to-login a {
+    color: #313942;
+    cursor: pointer; }

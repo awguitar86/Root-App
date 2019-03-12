@@ -1,0 +1,135 @@
+@import '../_colors.scss';
+
+.login {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.login-wrapper {
+  color: $text;
+  padding: 50px 100px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  h1 {
+    color: $route-dark;
+    font-family: $font;
+    font-weight: 400;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    input {
+      width: 400px;
+      height: 25px;
+      margin-bottom: 15px;
+      border: solid 1px $route-dark;
+      border-radius: 4px;
+      padding: 5px;
+      outline: none;
+      font-size: 12pt;
+      font-family: $font;
+    }
+
+    button {
+      width: 412px;
+      height: 35px;
+      border-radius: 4px;
+      margin-top: 20px;
+      background: $route-teal;
+      border: none;
+      color: white;
+      font-size: 12pt;
+      font-family: $font;
+      font-weight: 600;
+      cursor: pointer;
+      &:disabled {
+        width: 412px;
+        height: 35px;
+        border-radius: 4px;
+        margin-top: 20px;
+        background: lightgray;
+        border: none;
+        color: white;
+        font-size: 12pt;
+        font-family: $font;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.other-actions {
+  // margin-top: 10px;
+  width: 412px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    color: $route-dark;
+  }
+}
+
+.login-new-pass-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  input {
+    width: 400px;
+    height: 25px;
+    margin-bottom: 15px;
+    border: solid 1px $route-dark;
+    border-radius: 4px;
+    padding: 5px;
+    outline: none;
+    font-size: 12pt;
+    font-family: $font;
+  }
+  button {
+    width: 412px;
+    height: 35px;
+    border-radius: 4px;
+    margin-top: 20px;
+    background: $route-teal;
+    border: none;
+    color: white;
+    font-size: 12pt;
+    font-family: $font;
+    font-weight: 600;
+  }
+  div{
+    width: 412px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+      margin:0;
+    }
+  }
+}
+
+.error-message {
+    color: red;
+    width: 100%;
+    text-align: center;
+    margin: 1em;
+  }
+
+
+.login-check-email {
+  color: $route-teal;
+  font-weight: 600;
+}
+
+.login-check-email-false {
+  display: none;
+}

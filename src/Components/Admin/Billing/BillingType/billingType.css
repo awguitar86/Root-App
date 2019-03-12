@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700");
+.billing-type-wrap {
+  width: 100vw;
+  height: 100vh;
+  background: #1A1E37;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.billing-type-header {
+  width: 95vw;
+  border-bottom: solid 1px white;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; }
+  .billing-type-header h2 {
+    font-weight: normal;
+    color: white;
+    margin-right: 10px; }
+  .billing-type-header img {
+    width: 120px;
+    height: auto;
+    margin-top: 5px; }
+
+.billing-type {
+  width: 95vw;
+  background: #262C46;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 5px; }
+
+.billing-type-note {
+  width: 90vw; }
+  .billing-type-note p {
+    color: #45DCE5; }
+
+.billing-type-name {
+  width: 90vw;
+  color: #9799A8; }
+  .billing-type-name h4 {
+    margin: 0;
+    margin-bottom: 8px; }
+  .billing-type-name input {
+    width: 90vw;
+    height: 20px;
+    padding: 5px;
+    background: none;
+    border: solid 1px #9799A8;
+    border-radius: 5px;
+    font-size: 10pt;
+    color: #9799A8;
+    outline: none; }
+    .billing-type-name input:focus {
+      border: solid 1px #45DCE5; }
+
+.stripe-payment {
+  width: 90vw;
+  margin: 20px 0px 20px 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+
+.plaid-link-button {
+  width: 200px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 10pt;
+  background: #645FE8;
+  color: white;
+  outline: none;
+  cursor: pointer; }
+  .plaid-link-button:hover {
+    border: solid 1px #262C46; }
+  .plaid-link-button:active {
+    border: solid 2px #262C46; }
+
+.route-modal {
+  width: 95vw;
+  border: none;
+  outline: none;
+  font-family: "Titillium Web", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.route-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #00000030;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.modal-wrap {
+  width: 13vw;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #45DCE5;
+  z-index: inherit;
+  border-radius: 5px; }
+  .modal-wrap h1 {
+    color: #262C46; }

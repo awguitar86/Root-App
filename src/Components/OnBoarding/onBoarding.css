@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700");
+.route-modal {
+  width: 95vw;
+  border: none;
+  outline: none;
+  font-family: "Titillium Web", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.route-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #00000030;
+  display: flex;
+  justify-content: center;
+  align-items: center; }

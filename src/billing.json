@@ -1,0 +1,12 @@
+{
+    "label": "string",
+    "plaid_acct_id": "string", // metadata.account.id
+    "plaid_acct_mask": "string", // metadata.account.mask
+    "plaid_acct_name": "string", // metadata.account.name
+    "plaid_acct_subtype": "string", // metadata.account.subtype
+    "plaid_institution_id": "string", // metadata.institution.institution_id
+    "plaid_institution_name": "string", // metadata.institution.name
+    "plaid_link_session_id": "string", // metadata.link_session_id
+    "public_token_value": "string", // metadata.
+    "user_id": 0
+  }

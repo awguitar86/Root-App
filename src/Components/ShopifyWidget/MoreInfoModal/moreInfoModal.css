@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700");
+@media only screen and (max-width: 768px) {
+  .route-modal {
+    width: 95vw;
+    border: none;
+    outline: none;
+    font-family: "Titillium Web", sans-serif; }
+  .route-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00000030;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  #dialog {
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    z-index: inherit; }
+  #close-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+  #close-route-modal {
+    width: 35px;
+    height: 35px;
+    font-size: 26pt;
+    color: grey;
+    margin-right: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center; }
+  #close-route-modal:hover {
+    color: #5EC8DB; }
+  #close-route-modal:active {
+    font-size: 24pt; }
+  #powered-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center; }
+  #powered-by {
+    font-size: 10pt;
+    margin: 0; }
+  #powered-wrapper a img {
+    width: 180px;
+    height: auto; }
+  #protect-your-package {
+    margin-bottom: 0; }
+  #trusted-by {
+    font-size: 11pt;
+    color: #5EC7DB;
+    margin-top: 0; }
+  #description-wrapper {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 10px 0px 5px 0px;
+    padding: 40px 0px 40px 0px;
+    border-top: solid 1px lightgray;
+    border-bottom: solid 1px lightgray; }
+  #lost {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  #damage {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  #theft {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  #lost-img {
+    width: auto;
+    height: 70px;
+    margin-right: 5px;
+    margin-bottom: 15px; }
+  #damage-img {
+    width: auto;
+    height: 73px;
+    margin-right: 5px;
+    margin-bottom: 15px; }
+  #theft-img {
+    width: auto;
+    height: 73px;
+    margin-right: 5px;
+    margin-bottom: 15px; }
+  #lost-h3 {
+    font-size: 14pt;
+    margin: 0;
+    text-align: center;
+    font-weight: 600; }
+  #damage-h3 {
+    font-size: 14pt;
+    margin: 0;
+    text-align: center;
+    font-weight: 600; }
+  #theft-h3 {
+    font-size: 14pt;
+    margin: 0;
+    text-align: center;
+    font-weight: 600; }
+  #lost-p {
+    font-size: 9pt;
+    margin: 0;
+    text-align: center;
+    margin-top: 10px; }
+  #damage-p {
+    font-size: 9pt;
+    margin: 0;
+    text-align: center;
+    margin-top: 10px; }
+  #theft-p {
+    font-size: 9pt;
+    margin: 0;
+    text-align: center;
+    margin-top: 10px; }
+  #more-info-footer {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px 0px 20px 0px; }
+  #learn-more-terms {
+    width: 55%;
+    display: flex;
+    justify-content: center; }
+  #terms-and-conditions {
+    width: 100%;
+    font-size: 8pt;
+    line-height: 1.2;
+    text-align: center;
+    color: #9799A8;
+    margin: 0; }
+  #footer-right-wrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end; }
+  #lloyds-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; }
+  #backed-by {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 10pt;
+    margin: 0; }
+  #lloyds-logo {
+    width: 80px;
+    height: auto;
+    margin-left: 5px; }
+  #get-route-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  #get-route-business {
+    text-decoration: none;
+    color: black;
+    font-size: 9pt; }
+  #learn-more-terms-mobile {
+    display: none; }
+  #footer-top-wrap {
+    display: none; } }
+
+@media only screen and (max-width: 415px) {
+  .route-modal {
+    width: 100vw;
+    height: 100vh; }
+  #dialog {
+    width: 100vw;
+    height: 100%; }
+  #powered-wrapper a img {
+    width: 150px; }
+  #powered-by {
+    font-size: 8pt; }
+  #protect-your-package {
+    font-size: 14pt;
+    margin: 0; }
+  #description-wrapper {
+    width: 90vw;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
+    margin: 0; }
+  #lost {
+    width: 90vw;
+    margin-bottom: 20px; }
+  #damage {
+    width: 90vw;
+    margin-bottom: 20px; }
+  #theft {
+    width: 90vw; }
+  #lost-img {
+    height: 40px;
+    margin-bottom: 5px; }
+  #damage-img {
+    height: 40px;
+    margin-bottom: 5px; }
+  #theft-img {
+    height: 40px;
+    margin-bottom: 5px; }
+  #lost-h3 {
+    font-size: 11pt; }
+  #damage-h3 {
+    font-size: 11pt; }
+  #theft-h3 {
+    font-size: 11pt; }
+  #lost-p {
+    font-size: 9pt;
+    margin: 0;
+    text-align: center;
+    margin-top: 0px; }
+  #damage-p {
+    font-size: 9pt;
+    margin: 0;
+    text-align: center;
+    margin-top: 0px; }
+  #theft-p {
+    font-size: 9pt;
+    margin: 0;
+    text-align: center;
+    margin-top: 0px; }
+  #more-info-footer {
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px 20px 0px; }
+  #footer-top-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; }
+  #lloyds-wrap-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 5px; }
+  #backed-by-mobile {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 10pt;
+    margin: 0; }
+  #lloyds-logo-mobile {
+    width: 100px;
+    height: auto; }
+  #get-route-wrap-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  #get-route-business-mobile {
+    text-decoration: none;
+    color: black;
+    font-size: 9pt; }
+  #learn-more-terms-mobile {
+    width: 95vw;
+    display: flex;
+    justify-content: center; }
+  #terms-and-conditions-mobile {
+    width: 90vw;
+    font-size: 7pt;
+    line-height: 1.2;
+    text-align: center;
+    color: #9799A8;
+    margin: 0; }
+  #learn-more-terms {
+    display: none; }
+  #footer-right-wrap {
+    display: none; } }
+
+@media only screen and (max-width: 415px) {
+  #description-wrapper {
+    padding: 10px 0px 10px 0px; }
+  #lost-p {
+    font-size: 8pt; }
+  #damage-p {
+    font-size: 8pt; }
+  #theft-p {
+    font-size: 8pt; } }
+
+@media only screen and (max-width: 325px) {
+  #protect-your-package {
+    font-size: 14pt; } }

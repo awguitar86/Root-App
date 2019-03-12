@@ -1,0 +1,138 @@
+@import '../../../_colors.scss';
+
+.billing-type-wrap {
+    width: 100vw;
+    height: 100vh;
+    background: $background;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.billing-type-header {
+    width: 95vw;
+    border-bottom: solid 1px white;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    h2 {
+        font-weight: normal;
+        color: white;
+        margin-right: 10px;
+    }
+    img {
+        width: 120px;
+        height: auto;
+        margin-top: 5px;
+    }
+}
+
+.billing-type {
+    width: 95vw;
+    background: $sections;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.billing-type-note {
+    width: 90vw;
+    p {
+        color: $teal;
+    }
+}
+
+.billing-type-name{
+    width: 90vw;
+    color: $text;
+    h4 {
+        margin: 0;
+        margin-bottom: 8px;
+    }
+    input {
+        width: 90vw;
+        height: 20px;
+        padding: 5px;
+        background: none;
+        border: solid 1px $text;
+        border-radius: 5px;
+        font-size: 10pt;
+        color: $text;
+        outline: none;
+        &:focus {
+            border: solid 1px $teal;
+        }
+    }
+}
+
+.stripe-payment {
+    width: 90vw;
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.plaid-link-button {
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 10pt;
+    background: $violet;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    &:hover {
+        border: solid 1px $sections;
+    }
+    &:active {
+        border: solid 2px $sections;
+    }
+}
+
+.route-modal {
+    width: 95vw;
+    border: none;
+    outline: none;
+    font-family: $font;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // position: absolute;
+    // top: 40px;
+    // left: 40px;
+    // right: 40px;
+    // bottom: 40px;
+  }
+
+.route-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00000030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-wrap {
+    width: 13vw;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $teal;
+    z-index: inherit;
+    border-radius: 5px;
+    h1 {
+        color: $sections;
+    }
+}
+

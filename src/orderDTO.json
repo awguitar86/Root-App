@@ -1,0 +1,139 @@
+/* POST /order */
+
+{
+    "api_key": {
+      "key": "<your-route-api-key-goes-here>",
+      "platform_identifier": "<your-unique-route-generated-platform-identifier>",
+      "store_identifier": "<your-unique-route-generated-store's-identifier>"
+    },
+    "quote": {
+      "route_quote_amount": 0.98,
+      "route_quote_private_token": "<your-unique-route-quote-private-token-for-this-order>",
+      "route_quote_public_token": "<your-unique-route-quote-public-token-for-this-order>",
+      "timestamp": "2018-08-11T17:08:46.648Z"
+    },
+    "transaction": {
+      "currency": "USD",
+      "line_items": [
+        {
+          "discount": "SPECIAL",
+          "price": 19.99,
+          "price_before_discount": 21.99,
+          "product": {
+            "desc": "A wonderful Black T-shirt. Egyptian cotton. ...",
+            "insurable": true,
+            "name": "Black T-shirt",
+            "picture_uri": "https://example.com/assets/",
+            "sku": "123-456-789",
+            "url": "https://example.com/products/black-t-shirt"
+          }
+        }
+      ],
+      /* "merchant_id": 0, */
+      "payment": {
+        "customer": {
+          "email": "bob.brown@generic-email.com",
+          "first_name": "Bob",
+          "last_name": "Brown",
+          "phone": "888-323-5283"
+        },
+        "amount_covered": 19.99,
+        "paid_to_insure": 0.98,
+        "payment_method_type": "CARD",
+        "subtotal": 19.99,       /* Route charges before route */
+        "taxes": 0 /* Route is not taxable */
+      },
+      "platform_transaction_id": "<a-unique-identifier-that-you-produce-for-this-order>"
+    }
+  }
+
+  /* PUT /order */
+
+  {
+    "api_key": {
+      "key": "<your-route-api-key-goes-here>",
+      "platform_identifier": "<your-unique-route-generated-platform-identifier>",
+      "store_identifier": "<your-unique-route-generated-store's-identifier>"
+    },
+    "quote": {
+      "route_quote_amount": 0.98,
+      "route_quote_private_token": "<your-unique-route-quote-private-token-for-this-order>",
+      "route_quote_public_token": "<your-unique-route-quote-public-token-for-this-order>",
+      "timestamp": "2018-08-11T17:08:46.648Z"
+    },
+    "transaction": {
+      "currency": "USD",
+      "line_items": [
+        {
+          "discount": "SPECIAL",
+          "price": 19.99,
+          "price_before_discount": 21.99,
+          "product": {
+            "desc": "A wonderful Black T-shirt. Egyptian cotton. ...",
+            "insurable": true,
+            "name": "Black T-shirt",
+            "picture_uri": "https://example.com/assets/",
+            "sku": "123-456-789",
+            "url": "https://example.com/products/black-t-shirt"
+          }
+        }
+      ],
+      /* "merchant_id": 0, */
+      "payment": {
+        "customer": {
+          "email": "bob.brown@generic-email.com",
+          "first_name": "Bob",
+          "last_name": "Brown",
+          "phone": "888-323-5283"
+        },
+        "amount_covered": 19.99,
+        "paid_to_insure": 0.98,
+        "payment_method_type": "CARD",
+        "subtotal": 19.99,       /* Route charges before route */
+        "taxes": 0 /* Route is not taxable */
+      },
+      "platform_transaction_id": "<a-unique-identifier-that-you-produce-for-this-order>",
+      "tracking_number": "<tracking-number-from-courier>",
+      "courier": "<courier>"
+    }
+  }
+
+
+  /* POST /quote */
+  {
+    "api_key": {
+      "key": "<your-route-api-key-goes-here>",
+      "platform_identifier": "<your-unique-route-generated-platform-identifier>",
+      "store_identifier": "<your-unique-route-generated-store's-identifier>"
+    },
+    "transaction": {
+      "currency": "USD",
+      "line_items": [
+        {
+          "discount": "SPECIAL",
+          "price": 19.99,
+          "price_before_discount": 21.99,
+          "product": {
+            "desc": "A wonderful Black T-shirt. Egyptian cotton. ...",
+            "insurable": true,
+            "name": "Black T-shirt",
+            "picture_uri": "https://example.com/assets/",
+            "sku": "123-456-789",
+            "url": "https://example.com/products/black-t-shirt"
+          }
+        }
+      ],
+      "payment": {
+        "customer": {
+          "email": "bob.brown@generic-email.com",
+          "first_name": "Bob",
+          "last_name": "Brown",
+          "phone": "888-323-5283"
+        },
+        "amount_covered": 0,
+        "payment_method_type": "CARD",
+        "subtotal": 19.99
+      },
+      "platform_transaction_id": "<a-unique-identifier-that-you-produce-for-this-order>"
+    }
+  }

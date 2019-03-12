@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700");
+.dropdown-menu-body {
+  position: relative;
+  width: 60px; }
+
+.dropdown-menu {
+  background-color: #262C46;
+  position: absolute;
+  width: 160px;
+  top: 20px;
+  left: -23px;
+  padding-top: 20px; }
+
+.dropdown-menu-text-box {
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.dropdown-menu-text {
+  color: white;
+  font-family: Verdana;
+  text-decoration: none;
+  font-size: 10pt;
+  border-bottom: solid 1px #262C46;
+  margin-left: 15px; }
+  .dropdown-menu-text:hover {
+    border-bottom: solid 1px #45DCE5; }
