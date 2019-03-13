@@ -20,11 +20,11 @@ class RevenueProtected extends Component {
             role: 'platform.admin',
             stats: []
           };
-          this.handleAll = this.handleAll.bind(this);
-          this.handleYear = this.handleYear.bind(this);
-          this.handleMonth = this.handleMonth.bind(this);
-          this.handleWeek = this.handleWeek.bind(this);
-          this.handleDay = this.handleDay.bind(this);
+        //   this.handleAll = this.handleAll.bind(this);
+        //   this.handleYear = this.handleYear.bind(this);
+        //   this.handleMonth = this.handleMonth.bind(this);
+        //   this.handleWeek = this.handleWeek.bind(this);
+        //   this.handleDay = this.handleDay.bind(this);
       }
 
     // componentDidMount(){
@@ -73,240 +73,240 @@ class RevenueProtected extends Component {
     //     }
     // }
 
-    handleDay(){
-        let merchId = this.props.merchantInfo.id;
-        let platId = this.props.platformInfo.id;
-        let entity = this.props.entityInfo.entity;
-        let date = 'DAY'
-        console.log(this.state);
-        if(entity.includes('ROUTE_PLATFORM')){
-            findPlatformGraphDate(platId, date)
-            .then( res => {
-                if (res.status !== 200){
-                    alert(res);
-                }
-                else {
-                this.setState({
-                    lineGraphLabels: res.data.labels,
-                    lineGraphData: res.data.data
-                });
-                console.log(res.data);
-                }
-            })
-        }
-        else {
-            findAllOrders(merchId)
-                .then( res => {
-                    console.log(res.data[0]);
-                    if(res.data[0]){
-                        findGraphData(merchId)
-                        .then( res => {
-                            console.log(res.data);
-                            this.setState({
-                                lineGraphLabels: res.data.labels,
-                                lineGraphData: res.data.data,
-                                stats: this.props.merchantInfo.stats
-                            });
-                        })
-                    }
-                    else {
-                        this.setState({
-                            lineGraphLabels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24],
-                            lineGraphData: [0, 50, 98, 130, 169, 205, 380, 450, 525, 480, 400, 376, 300, 324, 385, 438, 491, 540, 600, 650, 520, 468, 430, 370],
-                            stats: {
-                                revenue_insured: '5,689',
-                                total_transactions: '3,568',
-                                number_of_insured: '1,457',
-                                uptake_percentage: 68
-                            }
-                        });
-                    }
-                })
-        }
-    }
-    handleWeek(){
-        let merchId = this.props.merchantInfo.id;
-        let platId = this.props.platformInfo.id;
-        let entity = this.props.entityInfo.entity;
-        let date = 'WEEK'
-        console.log(this.state);
-        if(entity.includes('ROUTE_PLATFORM')){
-            findPlatformGraphDate(platId, date)
-            .then( res => {
-                if (res.status !== 200){
-                    alert(res);
-                }
-                else {
-                this.setState({
-                    lineGraphLabels: res.data.labels,
-                    lineGraphData: res.data.data
-                });
-                console.log(res.data);
-                }
-            })
-        }
-        else {
-            findAllOrders(merchId)
-            .then( res => {
-                console.log(res.data[0]);
-                if(res.data[0]){
-                    findGraphData(merchId)
-                    .then( res => {
-                        console.log(res.data);
-                        this.setState({
-                            lineGraphLabels: res.data.labels,
-                            lineGraphData: res.data.data,
-                            stats: this.props.merchantInfo.stats
-                        });
-                    })
-                }
-                else {
-                    this.setState({
-                        lineGraphLabels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-                        lineGraphData: [98, 205, 380, 450, 525, 480, 376],
-                        stats: {
-                            revenue_insured: '5,689',
-                            total_transactions: '3,568',
-                            number_of_insured: '1,457',
-                            uptake_percentage: 68
-                        }
-                    });
-                }
-            })
-        }
-    }
-    handleMonth(){
-        let merchId = this.props.merchantInfo.id;
-        let platId = this.props.platformInfo.id;
-        let entity = this.props.entityInfo.entity;
-        let date = 'MONTH'
-        console.log(this.state);
-        if(entity.includes('ROUTE_PLATFORM')){
-            findPlatformGraphDate(platId, date)
-            .then( res => {
-                if (res.status !== 200){
-                    alert(res);
-                }
-                else {
-                this.setState({
-                    lineGraphLabels: res.data.labels,
-                    lineGraphData: res.data.data
-                });
-                console.log(res.data);
-                }
-            })
-        }
-        else {
-            findAllOrders(merchId)
-            .then( res => {
-                console.log(res.data[0]);
-                if(res.data[0]){
-                    findGraphData(merchId)
-                    .then( res => {
-                        console.log(res.data);
-                        this.setState({
-                            lineGraphLabels: res.data.labels,
-                            lineGraphData: res.data.data,
-                        });
-                    })
-                }
-                else {
-                    this.setState({
-                        lineGraphLabels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
-                        lineGraphData: [0, 50, 98, 130, 169, 205, 380, 450, 525, 480, 400, 376, 300, 324, 385, 438, 491, 540, 600, 650, 520, 468, 430, 370, 450, 525, 480, 400, 376, 300],
-                    });
-                }
-            })
-        }
-    }
-    handleYear(){
-        let merchId = this.props.merchantInfo.id;
-        let platId = this.props.platformInfo.id;
-        let entity = this.props.entityInfo.entity;
-        let date = 'YEAR'
-        console.log(this.state);
-        if(entity.includes('ROUTE_PLATFORM')){
-            findPlatformGraphDate(platId, date)
-            .then( res => {
-                if (res.status !== 200){
-                    alert(res);
-                }
-                else {
-                this.setState({
-                    lineGraphLabels: res.data.labels,
-                    lineGraphData: res.data.data
-                });
-                console.log(res.data);
-                }
-            })
-        }
-        else {
-            findAllOrders(merchId)
-            .then( res => {
-                console.log(res.data[0]);
-                if(res.data[0]){
-                    findGraphData(merchId)
-                    .then( res => {
-                        console.log(res.data);
-                        this.setState({
-                            lineGraphLabels: res.data.labels,
-                            lineGraphData: res.data.data,
-                        });
-                    })
-                }
-                else {
-                    this.setState({
-                        lineGraphLabels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-                        lineGraphData: [50, 98, 130, 169, 205, 380, 450, 525, 480, 400, 376, 300],
-                    });
-                }
-            })
-        }
-    }
-    handleAll(){
-        let merchId = this.props.merchantInfo.id;
-        let platId = this.props.platformInfo.id;
-        let entity = this.props.entityInfo.entity;
-        let date = 'ALL'
-        console.log(this.state);
-        if(entity.includes('ROUTE_PLATFORM')){
-            findPlatformGraphDate(platId, date)
-            .then( res => {
-                if (res.status !== 200){
-                    alert(res);
-                }
-                else {
-                this.setState({
-                    lineGraphLabels: res.data.labels,
-                    lineGraphData: res.data.data
-                });
-                console.log(res.data);
-                }
-            })
-        }
-        else {
-            findAllOrders(merchId)
-            .then( res => {
-                console.log(res.data[0]);
-                if(res.data[0]){
-                    findGraphData(merchId)
-                    .then( res => {
-                        console.log(res.data);
-                        this.setState({
-                            lineGraphLabels: res.data.labels,
-                            lineGraphData: res.data.data,
-                        });
-                    })
-                }
-                else {
-                    this.setState({
-                        lineGraphLabels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24],
-                        lineGraphData: [0, 50, 98, 130, 169, 205, 380, 450, 525, 480, 400, 376, 300, 324, 385, 438, 491, 540, 600, 650, 520, 468, 430, 370],
-                    });
-                }
-            })
-        }
-    }
+    // handleDay(){
+    //     let merchId = this.props.merchantInfo.id;
+    //     let platId = this.props.platformInfo.id;
+    //     let entity = this.props.entityInfo.entity;
+    //     let date = 'DAY'
+    //     console.log(this.state);
+    //     if(entity.includes('ROUTE_PLATFORM')){
+    //         findPlatformGraphDate(platId, date)
+    //         .then( res => {
+    //             if (res.status !== 200){
+    //                 alert(res);
+    //             }
+    //             else {
+    //             this.setState({
+    //                 lineGraphLabels: res.data.labels,
+    //                 lineGraphData: res.data.data
+    //             });
+    //             console.log(res.data);
+    //             }
+    //         })
+    //     }
+    //     else {
+    //         findAllOrders(merchId)
+    //             .then( res => {
+    //                 console.log(res.data[0]);
+    //                 if(res.data[0]){
+    //                     findGraphData(merchId)
+    //                     .then( res => {
+    //                         console.log(res.data);
+    //                         this.setState({
+    //                             lineGraphLabels: res.data.labels,
+    //                             lineGraphData: res.data.data,
+    //                             stats: this.props.merchantInfo.stats
+    //                         });
+    //                     })
+    //                 }
+    //                 else {
+    //                     this.setState({
+    //                         lineGraphLabels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24],
+    //                         lineGraphData: [0, 50, 98, 130, 169, 205, 380, 450, 525, 480, 400, 376, 300, 324, 385, 438, 491, 540, 600, 650, 520, 468, 430, 370],
+    //                         stats: {
+    //                             revenue_insured: '5,689',
+    //                             total_transactions: '3,568',
+    //                             number_of_insured: '1,457',
+    //                             uptake_percentage: 68
+    //                         }
+    //                     });
+    //                 }
+    //             })
+    //     }
+    // }
+    // handleWeek(){
+    //     let merchId = this.props.merchantInfo.id;
+    //     let platId = this.props.platformInfo.id;
+    //     let entity = this.props.entityInfo.entity;
+    //     let date = 'WEEK'
+    //     console.log(this.state);
+    //     if(entity.includes('ROUTE_PLATFORM')){
+    //         findPlatformGraphDate(platId, date)
+    //         .then( res => {
+    //             if (res.status !== 200){
+    //                 alert(res);
+    //             }
+    //             else {
+    //             this.setState({
+    //                 lineGraphLabels: res.data.labels,
+    //                 lineGraphData: res.data.data
+    //             });
+    //             console.log(res.data);
+    //             }
+    //         })
+    //     }
+    //     else {
+    //         findAllOrders(merchId)
+    //         .then( res => {
+    //             console.log(res.data[0]);
+    //             if(res.data[0]){
+    //                 findGraphData(merchId)
+    //                 .then( res => {
+    //                     console.log(res.data);
+    //                     this.setState({
+    //                         lineGraphLabels: res.data.labels,
+    //                         lineGraphData: res.data.data,
+    //                         stats: this.props.merchantInfo.stats
+    //                     });
+    //                 })
+    //             }
+    //             else {
+    //                 this.setState({
+    //                     lineGraphLabels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+    //                     lineGraphData: [98, 205, 380, 450, 525, 480, 376],
+    //                     stats: {
+    //                         revenue_insured: '5,689',
+    //                         total_transactions: '3,568',
+    //                         number_of_insured: '1,457',
+    //                         uptake_percentage: 68
+    //                     }
+    //                 });
+    //             }
+    //         })
+    //     }
+    // }
+    // handleMonth(){
+    //     let merchId = this.props.merchantInfo.id;
+    //     let platId = this.props.platformInfo.id;
+    //     let entity = this.props.entityInfo.entity;
+    //     let date = 'MONTH'
+    //     console.log(this.state);
+    //     if(entity.includes('ROUTE_PLATFORM')){
+    //         findPlatformGraphDate(platId, date)
+    //         .then( res => {
+    //             if (res.status !== 200){
+    //                 alert(res);
+    //             }
+    //             else {
+    //             this.setState({
+    //                 lineGraphLabels: res.data.labels,
+    //                 lineGraphData: res.data.data
+    //             });
+    //             console.log(res.data);
+    //             }
+    //         })
+    //     }
+    //     else {
+    //         findAllOrders(merchId)
+    //         .then( res => {
+    //             console.log(res.data[0]);
+    //             if(res.data[0]){
+    //                 findGraphData(merchId)
+    //                 .then( res => {
+    //                     console.log(res.data);
+    //                     this.setState({
+    //                         lineGraphLabels: res.data.labels,
+    //                         lineGraphData: res.data.data,
+    //                     });
+    //                 })
+    //             }
+    //             else {
+    //                 this.setState({
+    //                     lineGraphLabels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
+    //                     lineGraphData: [0, 50, 98, 130, 169, 205, 380, 450, 525, 480, 400, 376, 300, 324, 385, 438, 491, 540, 600, 650, 520, 468, 430, 370, 450, 525, 480, 400, 376, 300],
+    //                 });
+    //             }
+    //         })
+    //     }
+    // }
+    // handleYear(){
+    //     let merchId = this.props.merchantInfo.id;
+    //     let platId = this.props.platformInfo.id;
+    //     let entity = this.props.entityInfo.entity;
+    //     let date = 'YEAR'
+    //     console.log(this.state);
+    //     if(entity.includes('ROUTE_PLATFORM')){
+    //         findPlatformGraphDate(platId, date)
+    //         .then( res => {
+    //             if (res.status !== 200){
+    //                 alert(res);
+    //             }
+    //             else {
+    //             this.setState({
+    //                 lineGraphLabels: res.data.labels,
+    //                 lineGraphData: res.data.data
+    //             });
+    //             console.log(res.data);
+    //             }
+    //         })
+    //     }
+    //     else {
+    //         findAllOrders(merchId)
+    //         .then( res => {
+    //             console.log(res.data[0]);
+    //             if(res.data[0]){
+    //                 findGraphData(merchId)
+    //                 .then( res => {
+    //                     console.log(res.data);
+    //                     this.setState({
+    //                         lineGraphLabels: res.data.labels,
+    //                         lineGraphData: res.data.data,
+    //                     });
+    //                 })
+    //             }
+    //             else {
+    //                 this.setState({
+    //                     lineGraphLabels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+    //                     lineGraphData: [50, 98, 130, 169, 205, 380, 450, 525, 480, 400, 376, 300],
+    //                 });
+    //             }
+    //         })
+    //     }
+    // }
+    // handleAll(){
+    //     let merchId = this.props.merchantInfo.id;
+    //     let platId = this.props.platformInfo.id;
+    //     let entity = this.props.entityInfo.entity;
+    //     let date = 'ALL'
+    //     console.log(this.state);
+    //     if(entity.includes('ROUTE_PLATFORM')){
+    //         findPlatformGraphDate(platId, date)
+    //         .then( res => {
+    //             if (res.status !== 200){
+    //                 alert(res);
+    //             }
+    //             else {
+    //             this.setState({
+    //                 lineGraphLabels: res.data.labels,
+    //                 lineGraphData: res.data.data
+    //             });
+    //             console.log(res.data);
+    //             }
+    //         })
+    //     }
+    //     else {
+    //         findAllOrders(merchId)
+    //         .then( res => {
+    //             console.log(res.data[0]);
+    //             if(res.data[0]){
+    //                 findGraphData(merchId)
+    //                 .then( res => {
+    //                     console.log(res.data);
+    //                     this.setState({
+    //                         lineGraphLabels: res.data.labels,
+    //                         lineGraphData: res.data.data,
+    //                     });
+    //                 })
+    //             }
+    //             else {
+    //                 this.setState({
+    //                     lineGraphLabels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24],
+    //                     lineGraphData: [0, 50, 98, 130, 169, 205, 380, 450, 525, 480, 400, 376, 300, 324, 385, 438, 491, 540, 600, 650, 520, 468, 430, 370],
+    //                 });
+    //             }
+    //         })
+    //     }
+    // }
 
     // handleSelectChange = (selectedOption) => {
     //     this.setState({ selectedOption });
@@ -361,13 +361,13 @@ class RevenueProtected extends Component {
                             />
                         </div>
                         <div className='line-graph-dates'>
-                            <div className='date-buttons'>
+                            {/* <div className='date-buttons'>
                                 <button className='date-buttons-day' onClick={this.handleDay}>Day</button>
                                 <button className='date-buttons-week' onClick={this.handleWeek}>Week</button>
                                 <button className='date-buttons-month' onClick={this.handleMonth}>Month</button>
                                 <button className='date-buttons-year' onClick={this.handleYear}>Year</button>
                                 <button className='date-buttons-all' onClick={this.handleAll}>All</button>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     <div className='revenue-charts'>
